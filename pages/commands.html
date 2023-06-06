@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commands WaifuMusic</title>
+  <link rel="icon" href="../img/waifumusic.png">
+  <link rel="stylesheet" href="commands.css">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&amp;display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&amp;display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&amp;display=swap" rel="stylesheet">
+</head>
+
+<body onload="loaderFunction()">
+
+  <div id="loader">
+    <div class="loading">
+      <span></span>
+    </div>
+  </div>
+
+
+  <div id="page">
+    <nav>
+      <div class="logo noselect">
+        <img class="noselect" src="../img/waifumusic.png"> WaifuMusic
+      </div>
+
+      <div class="openMenu noselect"><i class="fa fa-bars"></i></div>
+      <ul class="mainMenu noselect">
+        <li><a href="../index-2.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a class="active" href="#"><i class="far fa-list-alt"></i> Commands</a></li>
+        <li><a href="https://discord.gg/WFfjrQxnfH" target="_none"><i class="fas fa-headset"></i> Support</a></li>
+        <li><a class="invite noselect" href="../invite.html" target="_none"><i class="fab fa-discord"></i> Add
+            to server</a></li>
+        <div class="closeMenu noselect"><i class="fa fa-times"></i></div>
+      </ul>
+    </nav>
+
+
+
+    <div class="container clear noselect">
+      <div class="row wrapper">
+
+        <span class="collapse" onclick="closeSidePanel()"><i class="fas fa-caret-left"></i></span>
+        <span class="expand" onclick="openSidePanel()"><i class="fas fa-caret-right"></i></span>
+
+        <div class="sidepanel">
+          <div class="divider left"></div>
+
+          <a class="title" href="#introduction">Introduction</a>
+
+          <a class="section" href="#aboutthisbot">About this Bot</a>
+          <a class="section" href="#technology">Technology</a>
+
+          <div class="divider left"></div>
+
+          <a class="title" href="#gettingstarted">Getting Started</a>
+
+          <a class="section" href="#inbothelp">In-Bot Help</a>
+          <a class="section" href="#addingthebot">Adding the Bot</a>
+
+          <div class="divider left"></div>
+
+          <a class="title" href="#commands">Commands</a>
+          <a class="section" href="#music-commands">Music commands</a>
+          <a class="section" href="#info-commands">Info commands</a>
+
+          <div class="divider left"></div>
+
+          <a class="title" href="https://discord.gg/WFfjrQxnfH">Support</a>
+
+          <div class="space double"></div>
+
+        </div>
+
+        <div class="right-col">
+          <h1 id="introduction">Introduction</h1>
+
+          <p id="aboutthisbot">WaifuMusic is the perfect music bot to spice up your server and let your member listen to
+            music.</p>
+
+          <h2>About this Bot</h2>
+
+          <p id="technology">WaifuMusi; Play music in VC with the highest quality and comes with; DJ-Role system, many
+            Filters for your music, easy to use, and have some fun commands!</p>
+
+          <h2>Technology</h2>
+
+          <p id="gettingstarted">The bot is bulit with javascript using the discord.js library, same with the API the
+            bot uses.<br><br>
+            The bot uses youtube api to provide music on vc.</p>
+
+          <div class="divider" style="width:24%; margin:30px 0;"></div>
+
+          <h1>Getting Started</h1>
+
+          <p id="inbothelp">To get started with our bot is fairly easy and we have done our best to make it simpler for
+            you.</p>
+
+          <h1>In-bot help</h1>
+
+          <p>You can use <span class="codeBlock">w?help</span> or <span class="codeBlock">/help</span> command to see
+            all commands of WaifuMusic</p>
+
+
+          <h2>Adding the bot</h2>
+
+          <p id="commands">To add the bot to your server <a href="../invite.html" target="_none">click
+              here.</a><br><br>This does needs you to either be the owner of the server or have "manage server"
+            permissions.<br><br>NOTE: The server owner will get a direct dm to the bot if the owner dm is open, and also
+            WaifuMusic will send a message to the channel available to chat after adding.</p>
+
+
+          <div id="anime" class="divider" style="width:24%; margin:30px 0;"></div>
+
+
+          <h1>Commands</h1>
+          <div>Syntax:
+            <ul>
+              <li><span class="codeBlock">
+                  <>
+                </span> : Required Argument</li>
+              <li><span class="codeBlock">[ ]</span> : Optional Argument</li>
+              <li id="anime"><span class="codeBlock">( )</span> : Command Aliases</li>
+            </ul>
+          </div>
+
+          <h2>Music commands</h2>
+          <ul>
+            <div>
+              <ul>
+                <li><span class="codeBlock">/play < song name> ( .p )</song></span></li>
+                <li><span class="codeBlock">/playskip</span></li>
+                <li><span class="codeBlock">/playtop</span></li>
+                <li><span class="codeBlock">/nowplaying</span></li>
+                <li><span class="codeBlock">/pause</span></li>
+                <li><span class="codeBlock">/resume</span></li>
+                <li><span class="codeBlock">/volume</span></li>
+                <li><span class="codeBlock">/stop</span></li>
+                <li><span class="codeBlock">/shuffle</span></li>
+                <li><span class="codeBlock">/seek</span></li>
+                <li><span class="codeBlock">/speed</span></li>
+                <li><span class="codeBlock">/skip</span></li>
+                <li><span class="codeBlock">/skipto</span></li>
+                <li><span class="codeBlock">/forward</span></li>
+                <li><span class="codeBlock">/rewind</span></li>
+                <li><span class="codeBlock">/join</span></li>
+                <li><span class="codeBlock">/lyrics</span></li>
+                <li><span class="codeBlock">/leave</span></li>
+                <li><span class="codeBlock">/queue</span></li>
+                <li><span class="codeBlock">/remove</span></li>
+                <li><span class="codeBlock">/clearqueue</span></li>
+                <li><span class="codeBlock">/loop < type loop > ( Off/The song/Queue )</type></span></li>
+                <li><span class="codeBlock">/filters</span></li>
+                <li><span class="codeBlock">/addrelated</span></li>
+
+
+
+              </ul>
+              <br>
+            </div>
+            <h2>Anime & Fun commands</h2>
+            <ul>
+              <div>
+                <ul>
+                  <li><span class="codeBlock">/anime-wallpaper</span></li>
+                  <li><span class="codeBlock">/anime</span></li>
+                  <li><span class="codeBlock">/animequote</span></li>
+                  <li><span class="codeBlock">/anisearch</span></li>
+                  <li><span class="codeBlock">/anitrace</span></li>
+                  <li><span class="codeBlock">/manga</span></li>
+                  <li><span class="codeBlock">/waifu</span></li>
+                  <li><span class="codeBlock">/art</span></li>
+                  <li><span class="codeBlock">/avatar</span></li>
+                  <li><span class="codeBlock">/meme</span></li>
+                  <li><span class="codeBlock">/oogway</span></li>
+                  <li><span class="codeBlock">/petpet</span></li>
+                  <li><span class="codeBlock">/rps</span></li>
+                  <li><span class="codeBlock">/say</span></li>
+                  <li><span class="codeBlock">/tictactoe</span></li>
+
+
+
+                </ul>
+                <br>
+              </div>
+              <li>Info commands</li>
+              <ul>
+                <li><span class="codeBlock">/waifuinfo</span></li>
+                <li><span class="codeBlock">/help</span></li>
+                <li><span class="codeBlock">/about</span></li>
+                <li><span class="codeBlock">/changelog</span></li>
+                <li><span class="codeBlock">/ping</span></li>
+                <li><span class="codeBlock">/uptime</span></li>
+
+              </ul>
+
+              <div class="divider" style="width:24%; margin:30px 0;"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="../script.js"></script>
+  <script src="commands.js"></script>
+</body>
+</html>

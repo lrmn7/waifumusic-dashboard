@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&amp;display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body {
+    background-image: url("../img/waifufu.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgb(21, 22, 24);
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+p {
+  margin-top: 300px; /* you can adjust this if you want :) */
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
+}
+a {
+    text-decoration: none !important;
+    font-weight: 500;
+}
+a {
+    color: #f02424;
+    text-decoration: underline;
+}
